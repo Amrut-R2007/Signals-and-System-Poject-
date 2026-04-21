@@ -3,7 +3,7 @@ import librosa.display
 import numpy as np
 import matplotlib.pyplot as plt 
 
-Y,sr=librosa.load(r"C:\Users\Amrut\Python\PythonPrograms\sp01_exhibition_sn10.wav",sr=None)
+Y,sr=librosa.load("exhibition_sn10.wav",sr=None)
 
 Y=np.fft.fft(Y)
 frequency=np.fft.fftfreq(len(Y),d=1/sr )
